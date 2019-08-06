@@ -8,6 +8,7 @@ import math
 import time
 import os
 
+# TODO: sessions https://bottlepy.org/docs/dev/recipes.html
 
 @route('/', method='GET')
 @view('views/index')

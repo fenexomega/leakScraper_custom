@@ -61,14 +61,14 @@
 	      	  </p>
 		      <table class="table-striped table table-hover">
 				<tr>
-					<th><label>Email <input id="chk_email" type="checkbox" unchecked onclick="switchsafemode('email');"/></label></th>
-					<th><label>Hash <input id="chk_hash" type="checkbox" unchecked onclick="switchsafemode('hash');"/></label></th>
-					<th><label>Plain <input id="chk_plain" type="checkbox" unchecked onclick="switchsafemode('plain');"/></label></th>
+					<th><label>Email</label></th>
+					<!-- <th><label>Hash <input id="chk_hash" type="checkbox" unchecked onclick="switchsafemode('hash');"/></label></th> -->
+					<th><label>Password</label></th>
 				</tr>
 				% for c in creds :
 				<tr>
 					<td><span class="email">{{c[0]}}</span>@{{c[1]}}</td>
-					<td><span class="hash">{{c[2]}}</span></td>
+					<!-- <td><span class="hash">{{c[2]}}</span></td> -->
 					<td><span class="plain">{{c[3]}}</span></td>
 				</tr>
 				% end
